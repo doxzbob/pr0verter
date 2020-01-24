@@ -11,7 +11,6 @@
                 <!-- <a href="{{ route('subtitle') }}">Subtitle Editor</a> | -->
                 <a href="{{ route('faq') }}">FAQ</a> |
                 <a href="{{ route('contact') }}">Kontakt</a> |
-                <a href="{{ route('changelog') }}">Changelog</a> |
             </div>
         </div>
     </div>

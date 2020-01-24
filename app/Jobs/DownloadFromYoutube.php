@@ -54,7 +54,7 @@ class DownloadFromYoutube implements ShouldQueue
      */
     public function handle()
     {
-        $dl = new YoutubeDl(['continue' => true, 'format' => 'best']);
+        $dl = new YoutubeDl(['continue' => true, 'format' => "'(bestvideo[width>=1920]/bestvideo)+bestaudio/best'", 'rate-limit' => '4M', 'max-filesize' => '1024m']);
 
         $dl->setDownloadPath($this->loc);
         $video = $dl->download($this->url);

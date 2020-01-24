@@ -65,7 +65,6 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="{{Route::is('faq') ? 'active' : ''}}"><a href="{{ route('faq') }}">FAQ</a></li>
                         <li class="{{Route::is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Kontakt</a></li>
-                        <li class="{{Route::is('changelog') ? 'active' : ''}}"><a href="{{ route('changelog') }}">Changelog</a></li>
                         @if(isset($cookies))
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Deine pr0jekte <span class="caret"></span></a>
